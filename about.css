@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.skewed-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper .skewed-header-content > .heading-wrapper {
+    background-color: gold;
+    color: white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+}
+
+.all-links {
+    display: flex;
+    padding: 0 10px;
+}
+
+.all-links li {
+    position: relative;
+    list-style: none;
+}
+
+.all-links li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.all-links a:hover {
+    color: red;
+}
+
+li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.702);
+    display: inline-block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after {
+    width: 80%;
+}
+
+/* Page container styles */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-container > .content-wrapper {
+    width: 1000px;
+}
+
+.page-container > .content-wrapper #agro {
+    width: 350px;
+    margin: 23px 40px 20px 0px;
+    float: left;
+    border: 1px solid gold;
+}
+
+.page-container > .content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.keyino {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 3px wavy gold ;
+    border-radius: 20px;
+
+}
+
+/* Square grid styles */
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .img-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.square > .square-test-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+
+
+
+
+.row {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.row ul {
+    list-style-type: none;
+}
+
+.row ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #e7f3fe;
+    border-left: 4px solid #4CAF50;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .skewed-header > .skewed-header-wrapper > .skewed-header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-container > .content-wrapper {
+        width: 90%;
+    }
+
+    .keyino {
+        width: 90%;
+    }
+
+    .squares-wrapper > .squares {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .square {
+        grid-template-columns: 1fr;
+    }
+
+    #agro {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .all-links li a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .keyino {
+        font-size: 18px;
+    }
+}

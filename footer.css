@@ -1,0 +1,108 @@
+
+
+/* footer styles */
+.footer {
+    background-color: rgb(2, 86, 2);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer > .logo-footer img {
+    width: 100px; /* Adjust width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  .footer > .footer-phone-hours {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .footer > .footer-phone-hours span {
+    margin: 0 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  
+  .footer > .footer-phone-hours > .hours {
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;
+  }
+  
+  .footer > .all-links {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of links */
+    justify-content: center;
+    padding: 0;
+    list-style: none; /* Remove bullet points */
+    
+  }
+  
+  .footer > .all-links li {
+    margin: 5px; /* Add margin between links */
+    color: blue;
+  }
+  
+  .footer > .all-links a {
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .footer > .all-links a:hover {
+    color: red;
+  }
+ 
+  
+  .footer > .social-media-icons-wrapper {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer > .social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: white;
+    margin: 0 10px; /* Add margin between icons */
+    transition: 0.5s;
+  }
+  
+  .footer > .social-media-icons-wrapper a:hover {
+    color: gold;
+  }
+  
+  .footer > .copyright-wrapper {
+    margin-top: 20px;
+    font-size: 0.7em;
+    color: honeydew;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer {
+      height: auto; /* Allow footer to adjust height */
+    }
+  
+    .footer > .logo-footer img {
+      width: 80px; /* Smaller logo on mobile */
+    }
+  
+    .footer > .all-links a {
+      font-size: 14px;
+    }
+  
+    .footer > .social-media-icons-wrapper a {
+      font-size: 1.2em; /* Smaller icons on mobile */
+    }
+  }
+  
